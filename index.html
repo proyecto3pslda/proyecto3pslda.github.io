@@ -147,7 +147,9 @@
   	   //proveedor de inicio - Facebook
         var provider = new firebase.auth.FacebookAuthProvider();
 
+import { FacebookAuthProvider } from "firebase/auth";
 
+const provider = new FacebookAuthProvider();
   		firebase.auth().signInWithPopup(provider).then(function(result) {
   		  // This gives you a Google Access Token. You can use it to access the Google API.
   		  var token = result.credential.accessToken;
