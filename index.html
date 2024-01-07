@@ -115,8 +115,11 @@
              }
 </script>
    <button onclick="onLogin();">Iniciar sesion con Facebook</button>
-   
-
+  
+<fb:login-button 
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
 
 
 
