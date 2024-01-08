@@ -16,12 +16,12 @@ header {
 }
 
 main {
-    max-width: 800px;
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -30,11 +30,17 @@ h1 {
 
 button {
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 20px;
     margin: 10px;
     border: none;
     border-radius: 5px;
     font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+    color: white;
 }
 
 #facebook-login {
@@ -67,61 +73,4 @@ footer {
     text-align: center;
     color: #777;
 }
-:root {
-  font-family: sans-serif;
-  --col-active: #4646462c;
-  --color-header: white;
-  --colorMiNav: white;
-}
 
-body {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 0.5rem;
-}
-
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color:
-    var(--color-header);
-}
-
-.herramientas {
-  display: flex;
-  flex-flow: wrap;
-  align-items: center;
-  align-content: flex-end;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  gap: 0.5rem;
-}
-
-header input {
-  flex-grow: 1;
-}
-
-h1 {
-  margin: 0.5rem 0;
-}
-
-figure img {
-  max-width: 100%;
-}
-
-legend,
-p label {
-  display: block;
-  font-weight: bold;
-  font-size: 0.7rem;
-}
-
-p label>* {
-  display: block;
-  font-weight: normal;
-  font-size: 1rem;
-  box-sizing: border-box;
-  width: 100%;
-}
