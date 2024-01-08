@@ -50,8 +50,7 @@ function htmlLista(snap) {
   } else {
     html += /* html */
       `<li class="vacio">
-        -- No hay alumnos
-        registrados. --
+        -- No hay serpientes registadas --
       </li>`;
   }
   lista.innerHTML = html;
