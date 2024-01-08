@@ -1,31 +1,19 @@
 mi-nav {
-    display: block;
-    background-color: var(--colorMiNav);
-    padding: 10px 0;
+  display: block;
+  background-color:
+    var(--colorMiNav);
 }
 
 mi-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 mi-nav ul li {
-    margin: 0.5rem;
-}
-
-mi-nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-mi-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+  margin: 0.5rem;
 }
