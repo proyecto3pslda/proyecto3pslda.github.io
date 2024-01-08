@@ -7,6 +7,7 @@ body {
     background-color: #4d977c;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
@@ -23,10 +24,12 @@ main {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h1 {
     color: #00ff1b;
+    text-align: center;
 }
 
 button {
