@@ -1,9 +1,10 @@
 @import "mi-nav.css";
 @import "mi-footer.css";
 @import "listas.css";
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
@@ -18,7 +19,7 @@ header {
 main {
     max-width: 600px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 30px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -30,12 +31,12 @@ h1 {
 
 button {
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 12px 24px;
     margin: 10px;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button:hover {
@@ -44,7 +45,7 @@ button:hover {
 }
 
 #facebook-login {
-    background-color: #3b5998;
+    background-color: #4267B2;
     color: #fff;
 }
 
@@ -55,11 +56,12 @@ button:hover {
 .row {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #avatar {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -73,4 +75,3 @@ footer {
     text-align: center;
     color: #777;
 }
-
