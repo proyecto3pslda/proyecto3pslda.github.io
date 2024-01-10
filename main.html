@@ -47,20 +47,6 @@
     href="css/estilos.css">
 </head>
 <body>
- <form name="forma">
-         <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Sesion Activa</a>
-            </li>
-           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sesion y Accesos</a>
-              <ul class="dropdown-menu">
-                <mi-nav></mi-nav>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" onclick="logout()">Cerrar Sesion</a></li>
-              </ul>
-            </li>
-          </ul>
     <header>
       
       <h1>Sesión</h1>
@@ -71,12 +57,13 @@
         </button>
       </div>
     </header>
+     text-align: center;
      <div class="card" style="width: 18rem;">
         <img class="card-img-top" id="avatar" src="" alt="Avatar">
         <div class="card-body">
           <p class="card-text">
             <label>
-              Email
+              Email:
               <output name="email">
                 <mi-progreso>
                 </mi-progreso>
@@ -85,7 +72,7 @@
           </p>
           <p class="card-text">
             <label>
-              Nombre
+              Nombre:
               <output name="nombre">
                 <mi-progreso>
                 </mi-progreso>
