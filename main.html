@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
@@ -47,41 +47,40 @@
     href="css/estilos.css">
 </head>
 <body>
+ <form name="forma">
+    <mi-nav></mi-nav>
     <header>
-      
       <h1>Sesión</h1>
       <div class="herramientas">
-        <button class="btn btn-danger" onclick="logout()"
-          type="button">
+        <button
+          type="button"
+          name="terminarSesión">
           Terminar Sesión
         </button>
       </div>
     </header>
-     text-align: center;
-     <div class="card" style="width: 18rem;">
-        <img class="card-img-top" id="avatar" src="" alt="Avatar">
-        <div class="card-body">
-          <p class="card-text">
-            <label>
-              Email:
-              <output name="email">
-                <mi-progreso>
-                </mi-progreso>
-              </output>
-            </label>
-          </p>
-          <p class="card-text">
-            <label>
-              Nombre:
-              <output name="nombre">
-                <mi-progreso>
-                </mi-progreso>
-              </output>
-            </label>
-          </p>
-        </div>
-      </div>
-    
+    <figure>
+      <img id="avatar" src=""
+        alt="Avatar">
+    </figure>
+    <p>
+      <label>
+        Email
+        <output name="email">
+          <mi-progreso>
+          </mi-progreso>
+        </output>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <output name="nombre">
+          <mi-progreso>
+          </mi-progreso>
+        </output>
+      </label>
+    </p>
     <mi-footer></mi-footer>
   </form>
   <script type="module"
