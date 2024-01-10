@@ -115,16 +115,22 @@
   <mi-nav></mi-nav>
   <form name="forma">
     <header>
-      <h1>Chat</h1>
-      <div class="herramientas">
-        <input name="texto"
-          required
-          placeholder="Mensaje">
-        <button>Enviar</button>
-      </div>
+
+        <h1>Chat</h1>
     </header>
-    <ul id="lista" class="lista">
-      <li>
+    <div class="chat-container">
+        <ul class="mensaje-lista">
+            <li class="mensaje">
+                <p>¡Hola! ¿Cómo estás?</p>
+            </li>
+            <!-- Agrega más mensajes según sea necesario -->
+        </ul>
+        <div class="mensaje">
+            <input name="texto" required placeholder="Escribe tu mensaje...">
+            <button>Enviar</button>
+        </div>
+    </div>
+
         <mi-progreso>
         </mi-progreso>
       </li>
