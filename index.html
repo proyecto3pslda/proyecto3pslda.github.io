@@ -1,111 +1,106 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width,
-       initial-scale=1.0">
-  <title>Sesión</title>
-  <!--
-    Carga el núcleo de Firebase
-    JS SDK
-  -->
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js">
-    </script>
-  <!--
-    Agrega el manejo de
-    autenticación.
-  -->
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js">
-    </script>
-  <!--
-    Agrega el manejo de bases de
-    datos.
-  -->
-  <script
-    src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js">
-    </script>
-  <!--
-    Configura la app usando la
-    información del sitio de
-    Firebase.
-  -->
-  <script src="js/init.js">
-  </script>
-  <script type="module"
-    src="cmp/mi-nav.js">
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina De Bienvenida</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-  <script type="module"
-    src="cmp/mi-progreso.js">
-    </script>
-  <link rel="stylesheet"
-    href="css/estilos.css">
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            flex-direction: column;
+            top: 0;
+            z-index: 1000;
+        }
+
+        main {
+            text-align: center;
+            margin: 20px;
+        }
+
+        section {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .boton {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        #azul {
+            background-color: #3498db;
+        }
+
+        #gris {
+            background-color: #95a5a6;
+        }
+
+        .boton:hover {
+            background-color: #2c3e50;
+        }
+        footer{
+            padding: 10px;
+            text-align: center;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: #95a5a6; /* Color de fondo de Google */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button img {
+            width: 40px; /* Ajusta el tamaño de los logotipos según sea necesario */
+            margin-right: 10px; /* Ajusta el espacio entre el logo y el texto del botón */
+        }
+    </style>
 </head>
 <body>
- <form name="forma">
-    <mi-nav></mi-nav>
     <header>
-      <h1>Sesión</h1>
-      <div class="herramientas">
-        <button
-          type="button"
-          name="terminarSesión">
-          Terminar Sesión
-        </button>
-      </div>
+        <h1>Bienvenid@ Al Sistema!</h1>
     </header>
-    <figure>
-      <img id="avatar" src=""
-        alt="Avatar">
-    </figure>
-    <p>
-      <label>
-        Email
-        <output name="email">
-          <mi-progreso>
-          </mi-progreso>
-        </output>
-      </label>
-    </p>
-    <p>
-      <label>
-        Nombre
-        <output name="nombre">
-          <mi-progreso>
-          </mi-progreso>
-        </output>
-      </label>
-    </p>
-
-
-</script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-	<!-- Bootstrap theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-	<!-- Add icon library -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<title>How to create Firebase Facebook Login?</title>
-</head>
-<body>
-<br>
-<div class="container">	
-  <div class="row">
-	<div class="col-sm-4">
-		<button type="button" id="facebook-login" name="facebook-login" class="btn btn-primary btn-lg btn-block"><i class="fa fa-facebook "></i> Login with Facebook</button>
-	</div><!-- end col -->	
-  </div><!--  end row -->		
-  </form>
-</div>
-<br>
-
-</body>
-
- Iniciar sesión con Google
+        <br><br><br><br>
+        <section>
+            <p>Para poder acceder debes de autenticarte primero</p>
+            <p>Selecciona a continuacion como quieres autenticarte.</p>
+            <br>
+            <button onclick="loginFacebook()" id="login_btn" >
+                <img src="img/facebook-logo.png" alt="Facebook Logo">
+                Iniciar sesión con Facebook
+              </button>
+              <br><br>
+              <a href="main.html">
+              <button class="facebook" href="">
+                <img src="img/google-logo.png" alt="Google Logo">
+                Iniciar sesión con Google
               </button>
             </a>
         </section>
@@ -120,12 +115,13 @@
   <script type="text/javascript">
 
   var firebaseConfig = {
-	apiKey: "AIzaSyDPkLSBpgErFer92-VdDGhjzInKLFrMRQI",
-  authDomain: "webaccc50.firebaseapp.com",
-  projectId: "webaccc50",
-  storageBucket: "webaccc50.appspot.com",
-  messagingSenderId: "914350632095",
-  appId: "1:914350632095:web:1aacb4706c3528acd786aa"
+  apiKey: "AIzaSyDXUxuyfaAq2JBlYhicx2FbmCpKsjkIuU4",
+  authDomain: "proyecto3pslda-66ad5.firebaseapp.com",
+  projectId: "proyecto3pslda-66ad5",
+  storageBucket: "proyecto3pslda-66ad5.appspot.com",
+  messagingSenderId: "1066251562018",
+  appId: "1:1066251562018:web:77b2ed4d7af652c260ae7b",
+  measurementId: "G-XH554784D6"
 	};
 
 	// Inicializamos firebase
@@ -134,73 +130,53 @@
   </script>
 
 
+  <script type="text/javascript">
 
-	 
-	<script type="module">
-	  // Import the functions you need from the SDKs you need
-	  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-app.js";
-	  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-analytics.js";
-	  import { getAuth, FacebookAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/9.11.0/firebase-auth.js";
-	  // TODO: Add SDKs for Firebase products that you want to use
-	  // https://firebase.google.com/docs/web/setup#available-libraries
+  	//variables
+  	var login_btn 		= document.getElementById("login_btn"),
+  		logout_btn 		= document.getElementById("logout_btn"),
+  		user_image 		= document.getElementById("user_image"),
+  		user_name_h1 	= document.getElementById("user_name");
 
-	  // Your web app's Firebase configuration
-	  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-	  const firebaseConfig = {
-  apiKey: "AIzaSyDXUxuyfaAq2JBlYhicx2FbmCpKsjkIuU4",
-  authDomain: "proyecto3pslda-66ad5.firebaseapp.com",
-  projectId: "proyecto3pslda-66ad5",
-  storageBucket: "proyecto3pslda-66ad5.appspot.com",
-  messagingSenderId: "1066251562018",
-  appId: "1:1066251562018:web:77b2ed4d7af652c260ae7b",
-  measurementId: "G-XH554784D6"
-		};
+  	//iniciar con Facebook
+  	var loginFacebook = function(){
 
-	  // Initialize Firebase
-	  const app = initializeApp(firebaseConfig);
-	  const analytics = getAnalytics(app);
-	  const auth = getAuth();
-	  //console.log(auth);
+  	   //proveedor de inicio - Facebook
+        var provider = new firebase.auth.FacebookAuthProvider();
 
-	  const provider = new FacebookAuthProvider();
-	  console.log(provider);
-	  
-	  //----- facebook login code start	  
-	  document.getElementById("facebook-login").addEventListener("click", function() {
-		  signInWithPopup(auth, provider)
-		  .then((result) => {
-		    // The signed-in user info.
-		    const user = result.user;
 
-		    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-		    const credential = FacebookAuthProvider.credentialFromResult(result);
-		    const accessToken = credential.accessToken;
-		    
-		    alert("Welcome "+user.displayName);
-		    console.log(user);
-		    // ...
-		  })
-		  .catch((error) => {
-		    // Handle Errors here.
-		    const errorCode = error.code;
-		    const errorMessage = error.message;
-		    console.log(errorMessage);
-		    // The email of the user's account used.
-		    const email = error.customData.email;
-		    // The AuthCredential type that was used.
-		    const credential = FacebookAuthProvider.credentialFromError(error);
+  		firebase.auth().signInWithPopup(provider).then(function(result) {
+  		  // Token de google usado para el acceso simulaneo
+  		  var token = result.credential.accessToken;
+  		  // Una vez iniciada la sesion pararemos a tomar los datos del usuario
+  		  var user = result.user;
+			//Si funciona, imprimimos el nombre del usuario
+  		  console.log(user.displayName);
+			//redirigimos a nuestra pagina MAIN
+  		  redireccionamiento(user);
+  		  // ...
+  		}).catch(function(error) {
+  		  // Cachamos errores
+  		  var errorCode = error.code;
+  		  var errorMessage = error.message;
+  		  // Error de email
+  		  var email = error.email;
+  		  // Error de credencial
+  		  var credential = error.credential;
+  		  // ...
 
-		    // ...
-		  });		  		  
-	  });
-	  //----- End
-	  
-	</script>
-   
-    <mi-footer></mi-footer>
-  </form>
-  <script type="module"
-    src="js/CtrlSesion.js">
-    </script>
+  		  console.log(errorMessage);
+  		});
+  	}
+
+  	//Redireccionamos
+  	var redireccionamiento = function(user){
+  		location.href="main.html";
+  	}
+
+  </script>
 </body>
+<footer style="background-color: azure; color: black; width: 100%;">
+    Alvaro Coyotecatl 2022601770    
+</footer>
 </html>
