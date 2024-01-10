@@ -5,83 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bienvenida</title>
     <style>
-       body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f8;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+      body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-        header {
-            background-color: #4CAF50; /* Verde principal */
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            width: 100%;
-            flex-direction: column;
-            top: 0;
-            z-index: 1000;
-        }
+header {
+    background-color: #4CAF50; /* Verde principal */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    top: 0;
+    z-index: 1000;
+}
 
-        main {
-            text-align: center;
-            margin: 20px;
-        }
+main {
+    text-align: center;
+    margin: 20px;
+}
 
-        section {
-            flex: 1;
-            padding: 20px;
-        }
+section {
+    flex: 1;
+    padding: 20px;
+    background-color: #4CAF50; /* Añadir margen verde alrededor del contenido */
+    border-radius: 10px; /* Agregar bordes redondeados al margen */
+    margin: 10px; /* Añadir espacio entre el margen y el contenido */
+}
 
-        .boton {
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            color: #fff;
-            transition: background-color 0.3s ease;
-        }
+.boton {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
 
-        #verde-oscuro {
-            background-color: #388E3C; /* Tono más oscuro de verde */
-        }
+#verde {
+    background-color: #4CAF50; /* Verde principal */
+}
 
-        .boton:hover {
-            background-color: #2E7D32; /* Cambio de color al pasar el ratón */
-        }
+#verde-oscuro {
+    background-color: #388E3C; /* Tono más oscuro de verde */
+}
 
-        footer {
-            padding: 10px;
-            text-align: center;
-            background-color: #4CAF50; /* Verde principal */
-            color: white;
-            width: 100%;
-            margin-top: auto;
-        }
+.boton:hover {
+    background-color: #2E7D32; /* Cambio de color al pasar el ratón */
+}
 
-        button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            background-color: #4CAF50; /* Verde principal */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-	}
-        
-        button img {
-            width: 40px; /* Ajusta el tamaño de los logotipos según sea necesario */
-            margin-right: 10px; /* Ajusta el espacio entre el logo y el texto del botón */
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #4CAF50; /* Verde principal */
+    color: white;
+    width: 100%;
+    margin-top: auto;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #4CAF50; /* Verde principal */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
         }
     </style>
 </head>
